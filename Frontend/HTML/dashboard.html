@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIGHT INVESTMENT</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="icon" type="image/x-icon" href="../Images/logo.pN6UDHF95RIOo-">
+
+</head>
+
+<body>
+    <section class="container">
+        <header>
+            <span id="logo">INVESTOR</span>
+            <nav>
+                <li class="home">HOME</li>
+                <li class="allInvestment">INVESTMENTS</li>
+            </nav>
+        </header>
+        <div class="content">
+            <section class="investments">
+                <span class="invCards">
+                    <span class="invCard">
+                        <h2>$50000</h2>
+                        <h4>INVESTED AMOUNT</h4>
+                    </span>
+                    <span class="invCard">
+                        <h2>$50000</h2>
+                        <h4>INVESTED AMOUNT</h4>
+                    </span>
+                    <span class="invCard">
+                        <h2>$50000</h2>
+                        <h4>INVESTED AMOUNT</h4>
+                    </span>
+                </span>
+                <section class="invGraph">
+                    <canvas id="myChart"></canvas>
+                </section>
+            </section>
+
+
+            <section class="InvAnalysis">
+                <table>
+                    <caption>TOP INVESTMENTS</caption>
+                    <thead>
+                        <th>id</th>
+                        <th>AMOUNT</th>
+                        <th>STARTUP</th>
+                        <th>PERCENTAGE</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>5000</td>
+                            <td>FIRST</td>
+                            <td>40%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>5000</td>
+                            <td>FIRST</td>
+                            <td>40%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>5000</td>
+                            <td>FIRST</td>
+                            <td>40%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>5000</td>
+                            <td>FIRST</td>
+                            <td>40%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>5000</td>
+                            <td>FIRST</td>
+                            <td>40%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>5000</td>
+                            <td>FIRST</td>
+                            <td>40%</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+                <div class="InvAnalysisGraph">
+                    <canvas id="myBar"></canvas>
+                </div>
+            </section>
+
+
+
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="../JS/script.js"></script>
+        <script>
+
+            const labels = ['JAN', 'FEB', 'MARCH', 'APRIL', 'MAY', 'JUNE', 'JULY'];
+            const data = {
+                labels: labels,
+                datasets: [{
+                    label: 'My First Dataset',
+                    data: [65, 59, 80, 81, 56, 55, 40],
+                    fill: false,
+                    borderColor: 'rgb(75, 192, 192)',
+                    tension: 0.1
+                }]
+            }
+
+            const config = {
+                type: 'line',
+                data: data
+                
+            }
+            const ctx = document.getElementById('myChart');
+            new Chart(ctx, config)
+            const data2 = {
+                labels: labels,
+                datasets: [
+                    {
+                        label: 'MONTHS',
+                        data: [65, 59, 80, 81, 56, 55, 40],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(255, 159, 64, 0.2)',
+                            'rgba(255, 205, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(201, 203, 207, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgb(255, 99, 132)',
+                            'rgb(255, 159, 64)',
+                            'rgb(255, 205, 86)',
+                            'rgb(75, 192, 192)',
+                            'rgb(54, 162, 235)',
+                            'rgb(153, 102, 255)',
+                            'rgb(201, 203, 207)'
+                        ],
+                        borderWidth: 1
+                    }
+                ]
+            }
+            const config2 = {
+                type: 'bar',
+                data: data2,
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            }
+            const ctx2 = document.getElementById('myBar');
+            new Chart(ctx2, config2)
+        </script>
+
+</body>
+
+</html>

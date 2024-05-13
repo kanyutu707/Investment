@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    background-color: white;
+    
+}
+nav{
+    
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+
+}
+nav li{
+    list-style: none;
+    font-size: 19px;
+    font-weight: 650px;
+    cursor: pointer;
+    
+}
+#logo{
+    font-size: 27px;
+    color: blue;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.investments{
+    
+    height: 400px;
+    box-shadow: 1px 2px 1px 2px white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+
+}
+.invCards{
+    width: 25%;
+    padding: 5px;
+    
+
+}
+.invGraph{
+    width: 85%;
+    background-color: white;
+    margin: auto;
+    margin: 5px;
+    margin-top: 20px;
+}
+.invGraph img{
+    width: 100%;
+    height: 100%;
+}
+.invCard{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    margin-top: 3%;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.invNumber{
+    display: flex;
+    flex-direction: column;
+
+}
+.InvAnalysis{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+caption{
+    background-color: white;
+    width: 100%;
+    text-align: left;
+    font-size: 24px;
+    padding: 10px;
+    font-weight: 700;
+}
+table{
+    background-color: white;
+    width: 49%;
+    box-shadow: 1px 2px 1px 2px whitesmoke;
+    border-radius: 2px;
+}
+th, td{
+    height: 40px;
+    border-bottom: 1px solid whitesmoke;
+    text-align: center;
+}
+.InvAnalysisGraph{
+    width: 50%;
+    background-color: white;
+    box-shadow: 1px 2px 1px 2px whitesmoke;
+    border-radius: 2px;
+    
+}
+.InvAnalysisGraph img{
+    width: 100%;
+    height: 400px;
+}
+.pageDet{
+    margin-top: 70px;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.investNav{
+    display: flex;
+    justify-content: space-between;
+}
+.investSingle{
+    background-color: black;
+    width: 32%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#investmentsTable{
+    width: 100%;
+}
+#investmentsTable thead th, #investmentsTable tbody tr td{
+    height: 50px;
+}
+.cards{
+    display: flex;
+ 
+    margin-top: 15px;
+    padding: 5px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    margin-top: 10px;
+    box-shadow: 1px 2px 1px 2px white;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    flex-grow: 1;
+    flex-basis: 200;
+}
+
+#allInvestors, #topInvestors{
+    width: 49%;
+    margin: 15px;
+}
+.topIndex{
+ 
+    height:88vh;
+    box-shadow: 1px 2px 1px 2px white;
+    padding: 40px;
+    background-color: white;
+    background-image: url("../Images/background4.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.topIndex h3{
+    margin-top: 150px;
+    width: 725px;
+    padding: 20px;
+    height: 182px;
+    letter-spacing: 4px;
+    font-size: 27px;
+    background-color:blue;
+    opacity: 0.70;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 22px;
+
+}
+.topIndex button{
+    width: 200px;
+    height: 55px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    
+   
+
+}
+.indexContainer header button{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    width: 120px;
+    height: 34px;
+}
+footer{
+    height: 5px;
+    margin-top: 10px;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 10px;
+    margin-bottom: 2px;
+    box-shadow: 2px 4px 2px 4px white;
+}
+.signIn, .signUp{
+    background-color: white;
+    width: 720px;
+    box-shadow: 2px 4px 2px 4px white;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 25vh;
+    padding: 15px;
+}
+.signIn #form_group, .signUp #form_group, .signUp #name_group #form_group{
+    display: flex;
+    flex-direction: column;
+}
+.signIn #form_group label, .signUp #form_group label, .signUp #name_group #form_group label{
+    font-size: 24px;
+    font-weight: 720;
+    margin-bottom: 5px;
+}
+.signIn #form_group input, .signUp #form_group input, .signUp #name_group #form_group input {
+    height: 40px;
+}
+.form_header{
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_header img{
+    height: 80%;
+}
+.form_header h2{
+    text-decoration: underline;
+    font-size: 30px;
+}
+.signIn button, .signUp button{
+    background-color: black;
+    width: 120px;
+    height: 40px;
+    color: white;
+    margin-left: 42%;
+    font-size: 22px;
+}
+.signUp #name_group{
+    display: flex;
+    justify-content: space-between;
+}
+.signUp #name_group{
+    width: 100%;
+}
+.signUp #name_group #form_group{
+    width: 49%;
+}
+.signUp{
+    height: 580px;
+    margin-top: 20vh;
+    width: 740px;
+}
+.signUp .form_header{
+    margin-bottom: 35px;
+}
+canvas{
+    width: 100%;
+    
+}
+#myChart{
+    width: 100%;
+}
+
+#actions{
+    display: flex;
+    width: 55%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    
+}
+.singleAction{
+    background-color: green;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-right: 7px;
+  
+}
+.singleAction:first-child{
+    background-color: blue;
+    width: 40px;
+}
+
+.singleAction:last-child{
+    background-color: red;
+}
